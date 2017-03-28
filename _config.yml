@@ -35,7 +35,7 @@ excerpt_separator: "\n\n"
 detach:  false
 port:    4000
 host:    127.0.0.1
-url: "https://meredith-durbin.github.io"
+# url: "https://meredith-durbin.github.io"
 baseurl: "/dirac-uw.github.io" # does not include hostname
 
 # Outputting
