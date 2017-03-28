@@ -35,7 +35,8 @@ excerpt_separator: "\n\n"
 detach:  false
 port:    4000
 host:    127.0.0.1
-baseurl: "" # does not include hostname
+url: "https://meredith-durbin.github.io"
+baseurl: "/dirac-uw.github.io" # does not include hostname
 
 # Outputting
 permalink:     pretty
