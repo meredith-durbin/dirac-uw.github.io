@@ -3,67 +3,6 @@ layout: base
 title: DIRAC Institute
 ---
 
-<style type="text/css">
-section, .container, .row {
-    padding-top:1em;
-    padding-bottom:1em;
-}
-section {
-    border-bottom:1px solid #ccc;
-}
-#about {
-    margin-top:-3em;
-}
-.center {
-    text-align:center;
-    margin:auto;
-}
-.logo, .logo-agency {
-    max-width:4em;
-    padding:0.3em;
-}
-.jumbotron, #lsst {
-    min-height:15em;
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    background-size:cover;
-    background-position:center center;
-    color:#ffffff!important;
-    text-shadow:#000 0px 0px 1px, #000 0px 0px 5px;
-}
-.jumbotron {
-    border-radius:0;
-    background-image:url('{{site.baseurl}}/img/jumbotron.jpg');
-    text-align:center;
-}
-#lsst {
-    background-image:url('{{site.baseurl}}/img/lsst2.jpg');
-    overflow:hidden;
-}
-.navbar {
-    margin-bottom:0;
-}
-h1,h2,h3,h4,h5,h6 {
-    padding-top:0.3em;
-    padding-bottom:0.3em;
-}
-.btn-inline {
-    display:inline;
-    margin-right:0.3em;
-    font-weight:bold;
-}
-.img-desc {
-    margin-left:1em;
-}
-@media (max-width:576px) {
-    .img-desc {
-        margin-top:1em;
-    }
-}
-</style>
-
-
 <body>
 
 <!-- Disabled until we're ready to start sending people to GitHub
@@ -82,11 +21,11 @@ h1,h2,h3,h4,h5,h6 {
         <li class="nav-item active">
             <a href="#" class="nav-link">About</a>
         </li>
-        <!-- <li class="nav-item">
-            <a href="#code" class="nav-link">Code</a>
-        </li> -->
         <li class="nav-item">
-            <a href="#involved" class="nav-link">Get Involved</a>
+            <a href="#news" class="nav-link">News</a>
+        </li>
+        <li class="nav-item">
+            <a href="#contribute" class="nav-link">Get Involved</a>
         </li>
         <li class="nav-item">
             <a href="#lsst" class="nav-link">LSST</a>
@@ -113,11 +52,11 @@ h1,h2,h3,h4,h5,h6 {
             <div class="col-12">
                 <h2>DIRAC: Data Intensive Research in Astrophysics and Cosmology</h2>
                 <p>
-                The DIRAC Institute: The Data Intensive Research in Astrophysics and Cosmology Institute is a world     leading, interdisciplinary research center that addresses fundamental questions about the origins and   evolution of our universe.
+                The DIRAC Institute: The Data Intensive Research in Astrophysics and Cosmology Institute is a world leading, interdisciplinary research center that addresses fundamental questions about the origins and evolution of our universe.
                 </p>
 
                 <p>
-                Our research brings together scientists across many disciplines on a mission to understand the nature   of Dark Matter and Dark Energy, the emergence of structure within the universe, the formation of    galaxies, the birth and evolution of black holes, the transformations of stars, and the origins of  the planets.    
+                Our research brings together scientists across many disciplines on a mission to understand the nature of Dark Matter and Dark Energy, the emergence of structure within the universe, the formation of galaxies, the birth and evolution of black holes, the transformations of stars, and the origins of the planets.    
                 </p>
 
                 <p>
@@ -130,7 +69,7 @@ h1,h2,h3,h4,h5,h6 {
                 </p>
 
                 <p>
-                From fundamental research on the most energetic events in the universe to the search for asteroids  that may one day impact the Earth, the science of the next decade will be driven by data. Our ability   to make scientific breakthroughs will be governed by our capacity to deal with the scale and        complexity of the data from a new generation of telescopes and experiments that will explore the    inner and outer reaches of our universe. DIRAC is creating an environment where scientists  harness     interdisciplinary expertise to solve some of the most difficult questions facing astronomy today; an    interaction space between Astrophysics, Computer Science, Statistics, and other disciplines.    </p>
+                From fundamental research on the most energetic events in the universe to the search for asteroids that may one day impact the Earth, the science of the next decade will be driven by data. Our ability to make scientific breakthroughs will be governed by our capacity to deal with the scale and complexity of the data from a new generation of telescopes and experiments that will explore the inner and outer reaches of our universe. DIRAC is creating an environment where scientists harness interdisciplinary expertise to solve some of the most difficult questions facing astronomy today; an interaction space between Astrophysics, Computer Science, Statistics, and other disciplines.</p>
 
                 <p>
                 The LSST DM team is distributed across a number of partner
@@ -145,75 +84,105 @@ h1,h2,h3,h4,h5,h6 {
                 Washington</a> &mdash; but also helped by contributors from the community,
                 the LSST science collaborations, and other project subsystems.
                 </p>
-
-                <p class="center">
-                <a class="btn btn-primary" href="https://www.slideshare.net/MarioJuric/lsstdm-building-a-next-generation-survey-data-processing-system" role="button">Learn more about DIRAC &raquo;</a>
-                </p>
-
             </div>
         </div> <!--row-->
-    </div> <!--container-->
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Science Pipelines</h4>
-          <p>
-
-        The <a href="http://ls.st/ug">LSST Science Pipelines</a> will implement the core image processing and data
-        analysis algorithms needed to process optical survey imaging data at
-        low latency and unprecedented scale and accuracy.  We are writing pipelines for
-        single-epoch image processing, coaddition, image differencing,
-        optimal multi-epoch measurements, and (global) photometric and
-        astrometric calibration, among others.
-
-       </p>
-
-       </div>
-        <div class="col-md-4">
-          <h4>Scalable Database</h4>
-          <p>
-
-        To satisfy the need to efficiently store, query, and analyze catalogs
-        running into trillions of row gs and petabytes of data, we are developing
-        <a href="http://ls.st/kth">Qserv</a>, a distributed shared-nothing SQL database query system.
-
-          </p>
+        <h4>Talks &amp; Presentations</h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/cI9vSC1eQ18" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h6 class="center">TED Talk by Dr. Andy Connolly on the Large Synoptic Survey Telescope</h6>
+            </div>
+            <div class="col-lg-6">
+                <div class="video">
+                    <iframe src="//www.slideshare.net/slideshow/embed_code/key/fIUc2Bc32FTpPz" width="100%" height="auto" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+                </div>
+                    <h6 class="center">Slides: <a href="//www.slideshare.net/MarioJuric/lsstdm-building-a-next-generation-survey-data-processing-system" title="LSST/DM: Building a Next Generation Survey Data Processing System" target="_blank">LSST/DM: Building a Next Generation Survey Data Processing System</a> by <a target="_blank" href="https://www.slideshare.net/MarioJuric">Mario Juric</a></h6>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h4>User Interface</h4>
-          <p>
-        One of the most important jobs of a large survey is to provide access.
-        This includes access to catalogs, processed images, and raw images.  Access in the next generation
-        of surveys will extend to visualization and analysis.  We are writing interfaces
-        that will allow thousands of users to query, download, visualize, and analyze petabytes of LSST data.
-          </p>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-6">
-          <h4>Data Access Middleware</h4>
-          <p>
-        In order to build a scalable, portable processing system, we are creating extensible
-        middleware to transparently access data irrespective of storage location or format.
-        </p>
+        <div class="row no-pad">
+            <div class="col-12 no-pad">
+                <h3 class="no-pad">Data &amp; Software</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Science Pipelines</h4>
+                <p>
+                The <a href="http://ls.st/ug">LSST Science Pipelines</a> will implement the core image processing and data
+                analysis algorithms needed to process optical survey imaging data at
+                low latency and unprecedented scale and accuracy.  We are writing pipelines for
+                single-epoch image processing, coaddition, image differencing,
+                optimal multi-epoch measurements, and (global) photometric and
+                astrometric calibration, among others.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4>Scalable Database</h4>
+                <p>
+                To satisfy the need to efficiently store, query, and analyze catalogs
+                running into trillions of row gs and petabytes of data, we are developing
+                <a href="http://ls.st/kth">Qserv</a>, a distributed shared-nothing SQL database query system.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4>User Interface</h4>
+                <p>
+                One of the most important jobs of a large survey is to provide access.
+                This includes access to catalogs, processed images, and raw images.  Access in the next generation
+                of surveys will extend to visualization and analysis.  We are writing interfaces
+                that will allow thousands of users to query, download, visualize, and analyze petabytes of LSST data.
+                </p>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col-md-6">
+            <h4>Data Access Middleware</h4>
+            <p>
+            In order to build a scalable, portable processing system, we are creating extensible
+            middleware to transparently access data irrespective of storage location or format.
+            </p>
+
+            </div>
+            <div class="col-md-6">
+            <h4>Distributed Execution</h4>
+            <p>
+            The LSST data processing pipelines will need to efficiently scale from single core
+            execution to tens of thousands of cores.  To meet this requirement we are building
+            an orchestration framework to launch and monitor jobs on many different systems at
+            many different scales.
+            </p>
         </div>
-        <div class="col-md-6">
-          <h4>Distributed Execution</h4>
-          <p>
-        The LSST data processing pipelines will need to efficiently scale from single core
-        execution to tens of thousands of cores.  To meet this requirement we are building
-        an orchestration framework to launch and monitor jobs on many different systems at
-        many different scales.
-          </p>
         </div>
-      </div>
 
     </div><!-- /.container -->
 </section>
+
+<section class="container-fluid" id="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>News &amp; Events</h2>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    {% include events.html %}
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="center">
+                <a class="btn btn-primary" role="button" href="https://depts.washington.edu/astron/events/">See all upcoming UW Astronomy Events &raquo;</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- 
 <section class="container-fluid" id="involved">
     <div class="container">
@@ -272,7 +241,7 @@ eups distrib install -t v12_0 lsst_apps</pre>
 </section>
  -->
 
-<section class="container-fluid" id="jobs">
+<section class="container-fluid" id="contribute">
     <div class="container">
       <h2>Getting Involved</h2>
       DIRAC is creating an environment where scientists can harness interdisciplinary expertise to solve some   of the most difficult questions facing Astronomy today. It  provides an interaction space between   Astrophysics, Computer Science, Statistics, and other disciplines. It is a place where ideas across     many disciplines come together and mature; a laboratory for devising new ways of extracting knowledge   from complex systems. 
@@ -371,7 +340,7 @@ eups distrib install -t v12_0 lsst_apps</pre>
                 <h5>Andy Connolly&nbsp;&nbsp;<small class="text-info">Director</small></h5>
             </div>
             <div class="col-md-3 col-sm-5">
-                <img class="img-responsive img-thumbnail" src="https://depts.washington.edu/astron/wordpress/wp-content/uploads/2015/09/andyconnolly.jpg" alt="Andy Connolly">
+                <img class="img-responsive img-thumbnail" src="{{site.baseurl}}/img/andy.jpg" alt="Andy Connolly">
             </div>
                 <p class="img-desc">My work focuses on using large surveys to study cosmology and the evolution of galaxies. This ranges from studying the clustering of galaxies and their evolution with redshift, weak gravitational lensing of galaxies, and estimating the properties of galaxies based on their colors (aka photometric redshifts). The common theme to this work is addressing the need for massive data sets and how to work with them. One area that interests me a lot at the moment is the Large Synoptic Survey Telescope (LSST) where I lead the development of simulations of what LSST might observe. Beyond cosmology, I am also interested in how to make the technologies that companies use to search the internet useful in research and education.</p>
         </div>
@@ -380,11 +349,21 @@ eups distrib install -t v12_0 lsst_apps</pre>
                 <h5>Mario Juri&cacute;&nbsp;&nbsp;<small class="text-info">Director</small></h5>
             </div>
             <div class="col-md-3 col-sm-5">
-                <img class="img-responsive img-thumbnail" src="https://depts.washington.edu/astron/wordpress/wp-content/uploads/2015/11/mjuric-profile-picture-photo.jpg" alt="Mario Juri&cacute;">
+                <img class="img-responsive img-thumbnail" src="{{site.baseurl}}/img/mario.jpg" alt="Mario Juri&cacute;">
             </div>
-                <p class="img-desc">I’m interested in astronomical ‘Big Data’: developing and applying methods and algorithms that let us use large data sets to answer research questions. Major astronomical surveys of today are routinely collecting hundreds of terabytes of images, creating databases with billions of objects and several billion measurements. Large surveys astronomers are becoming part data scientists. In my research, I go where the data takes me — I’ve worked on topics ranging from asteroids in the Solar System, Galactic structure, to the scale structure of the universe. My current focus is using survey data to understand the structure and evolution of the Milky Way.</p>
+                <p class="img-desc">I'm interested in astronomical 'Big Data': developing and applying methods and algorithms that let us use large data sets to answer research questions. Major astronomical surveys of today are routinely collecting hundreds of terabytes of images, creating databases with billions of objects and several billion measurements. Large surveys astronomers are becoming part data scientists. In my research, I go where the data takes me — I've worked on topics ranging from asteroids in the Solar System, Galactic structure, to the scale structure of the universe. My current focus is using survey data to understand the structure and evolution of the Milky Way.</p>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h5>&Zcaron;eljko Ivezi&cacute;&nbsp;&nbsp;<small class="text-info">Director</small></h5>
+            </div>
+            <div class="col-md-3 col-sm-5">
+                <img class="img-responsive img-thumbnail" src="{{site.baseurl}}/img/zeljko.jpg" alt="&Zcaron;eljko Ivezi&cacute;">
+            </div>
+                <p class="img-desc">&Zcaron;eljko Ivezi&cacute; (pronounced something like Gel-co Eva-zich) obtained undergraduate degrees in mechanical engineering and physics from the University of Zagreb, Croatia, in 1990 and 1991. He obtained Ph.D. in physics from the University of Kentucky in 1995, where he worked on dust radiative transfer models and wrote the code Dusty. He moved on to Princeton University in 1997 to work on the Sloan Digital Sky Survey, and took a professorship at the University of Washington, Seattle, in 2004. &Zcaron;eljko's scientific interests are in detection, analysis and interpretation of electromagnetic radiation from astronomical sources. His current obsession is the Large Synoptic Survey Telescope project, for which he serves as the Project Scientist.</p>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
             <div class="col-12 center">

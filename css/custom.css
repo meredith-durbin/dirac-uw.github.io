@@ -1,0 +1,74 @@
+section, .container, .row {
+    padding-top:1em;
+    padding-bottom:1em;
+}
+section {
+    border-bottom:1px solid #ccc;
+}
+#about {
+    margin-top:-3em;
+}
+.center {
+    text-align:center;
+    margin:auto;
+}
+.logo, .logo-agency {
+    max-width:4em;
+    padding:0.3em;
+}
+.jumbotron, #lsst {
+    min-height:15em;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    background-position:center center;
+    color:#ffffff!important;
+    text-shadow:#000 0px 0px 1px, #000 0px 0px 5px;
+}
+.jumbotron {
+    border-radius:0;
+    background-image:url('../img/jumbotron.jpg');
+    text-align:center;
+}
+#lsst {
+    background-image:url('../img/lsst2.jpg');
+    overflow:hidden;
+}
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.navbar {
+    margin-bottom:0;
+}
+h1,h2,h3,h4,h5,h6 {
+    padding-top:0.3em;
+    padding-bottom:0.3em;
+}
+.no-pad {
+    padding-top:0;
+    padding-bottom:0;
+}
+.btn-inline {
+    display:inline;
+    margin-right:0.3em;
+    font-weight:bold;
+}
+.img-desc {
+    margin-left:1em;
+}
+@media (max-width:576px) {
+    .img-desc {
+        margin-top:1em;
+    }
+}
