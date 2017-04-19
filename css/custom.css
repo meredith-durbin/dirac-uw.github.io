@@ -5,6 +5,14 @@ section, .container, .row {
 section {
     border-bottom:1px solid #ccc;
 }
+section, .jumbotron {
+    border-top:53px solid transparent;
+    margin-top:-53px;
+}
+section#lsst {
+    border-top:53px solid #fff;
+    margin-top:-53px;
+}
 .img-nav {
     position:fixed;
     top:2px;
@@ -24,23 +32,24 @@ section {
     padding:0.3em;
 }
 .jumbotron, #lsst {
-    min-height:15em;
+    min-height:15rem;
     background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    background-size:cover;
+    -webkit-background-size:cover!important;
+    -moz-background-size:cover!important;
+    background-size:cover!important;
     background-position:center center;
     color:#ffffff!important;
     text-shadow:#000 0px 0px 1px, #000 0px 0px 5px;
 }
 .jumbotron {
+    margin-bottom:0;
     border-radius:0;
     background-image:url('../img/jumbotron.jpg');
     text-align:center;
 }
 #lsst {
     background-image:url('../img/lsst2.jpg');
-    overflow:hidden;
+    overflow:#fff;
 }
 .video {
     position: relative;
@@ -79,3 +88,9 @@ h1,h2,h3,h4,h5,h6 {
         margin-top:1em;
     }
 }
+/*section:before, .jumbotron:before {
+    content:""!important;
+    display:block!important;
+    height:100px!important;
+    margin-top:-100px!important;
+}*/

@@ -22,10 +22,10 @@ title: DIRAC Institute
     <!-- </div> -->
     <ul class="nav navbar-nav float-right">
         <li class="nav-item active">
-            <a href="#" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-            <a href="#news" class="nav-link">News</a>
+            <a href="#events" class="nav-link">Events</a>
         </li>
         <li class="nav-item">
             <a href="#contribute" class="nav-link">Get Involved</a>
@@ -47,7 +47,6 @@ title: DIRAC Institute
     <!-- <p>An Institute at the <a href="https://www.washington.edu/">University of Washington</a>.</p> -->
     </div>
 </div>
-
 
 <section class="container-fluid" id="about">
     <div class="container">
@@ -114,8 +113,7 @@ title: DIRAC Institute
             <div class="col-md-4">
                 <h4>Science Pipelines</h4>
                 <p>
-                The <a href="http://ls.st/ug">LSST Science Pipelines</a> will implement the core image processing and data
-                analysis algorithms needed to process optical survey imaging data at
+                The <a href="http://ls.st/ug">LSST Science Pipelines</a> will implement the core image processing and data analysis algorithms needed to process optical survey imaging data at
                 low latency and unprecedented scale and accuracy.  We are writing pipelines for
                 single-epoch image processing, coaddition, image differencing,
                 optimal multi-epoch measurements, and (global) photometric and
@@ -164,15 +162,24 @@ title: DIRAC Institute
     </div><!-- /.container -->
 </section>
 
-<section class="container-fluid" id="news">
+<section class="container-fluid" id="events">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>News &amp; Events</h2>
+                <h2 class="no-pad">Upcoming Events</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>UW Astronomy</h5>
+                <ul>
+                    {% include events_uwastro.html %}
+                </ul>
             </div>
             <div class="col-md-6">
+                <h5>eScience Institute</h5>
                 <ul>
-                    {% include events.html %}
+                    {% include events_escience.html %}
                 </ul>
             </div>
         </div>
@@ -246,48 +253,54 @@ eups distrib install -t v12_0 lsst_apps</pre>
 
 <section class="container-fluid" id="contribute">
     <div class="container">
-      <h2>Getting Involved</h2>
-      DIRAC is creating an environment where scientists can harness interdisciplinary expertise to solve some   of the most difficult questions facing Astronomy today. It  provides an interaction space between   Astrophysics, Computer Science, Statistics, and other disciplines. It is a place where ideas across     many disciplines come together and mature; a laboratory for devising new ways of extracting knowledge   from complex systems. 
-      <div class="row">
-        <div class="col-md-6">
-         <h4>Postdoctoral and/or Research Scientist Positions</h4>
-     <p>
-         The DIRAC Institute and LSST group in the Astronomy department at the University of Washington have    openings for two postdoctoral or research scientist positions. These positions are to help with the     processing and analysis of data from the Zwicky Transit Factory (ZTF) and the Large Synoptic Survey     Telescope (LSST). The University of Washington is a new member of the ZTF collaboration, a time-    domain survey that will see first light in 2017 when it will scan over 3750 square degrees an hour to   a depth of 20.5-21 mag. As part of its contributions to ZTF, UW and the DIRAC Institute (a newly    established institute for data intensive survey astrophysics at the University of Washington) will  lead the development of a database for storing and serving transient and variable sources detected by   ZTF.        
-    </p>
-
-     <p>
-     Current LSST DM job openings:
-     </p>
-         <ul>
-          <li><a href="https://www.princeton.edu/astro/resources/job/jo/index.xml#comp000055bddc2d0000003dd7408b">Princeton University: Postdoctoral Positions in Software</a> <span class="label label-info">Updated for 2017 start</span>
-         </ul>
-
-    <p>
-    <button type="button" class="btn btn-inline btn-xs btn-outline-success">Hint</button> To receive e-mails for new LSST DM job openings, subscribe to
-    the <a href="https://lists.lsst.org/mailman/listinfo/dm-announce">dm-announce</a> mailing list.
-        For more LSST positions, see the main <a href="http://lsst.org/hiring">LSST Hiring</a> page.
-        </p>
+        <div class="row">
+            <div class="col-12">
+                <h2>Getting Involved</h2>
+                <p>
+                DIRAC is creating an environment where scientists can harness interdisciplinary expertise to solve some   of the most difficult questions facing Astronomy today. It  provides an interaction space between   Astrophysics, Computer Science, Statistics, and other disciplines. It is a place where ideas across     many disciplines come together and mature; a laboratory for devising new ways of extracting knowledge   from complex systems. 
+                </p>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Postdoctoral and/or Research Scientist Positions</h4>
+                <p>
+                The DIRAC Institute and LSST group in the Astronomy department at the University of Washington have openings for two postdoctoral or research scientist positions. These positions are to help with the processing and analysis of data from the Zwicky Transit Factory (ZTF) and the Large Synoptic Survey Telescope (LSST). The University of Washington is a new member of the ZTF collaboration, a time-domain survey that will see first light in 2017 when it will scan over 3750 square degrees an hour to a depth of 20.5-21 mag. As part of its contributions to ZTF, UW and the DIRAC Institute (a newly established institute for data intensive survey astrophysics at the University of Washington) will  lead the development of a database for storing and serving transient and variable sources detected by   ZTF.        
+                </p>
 
-        <div class="col-md-6">
-         <h4>Use, Modify, Contribute</h4>
-         <p>
-         The LSST data processing system, though still in an early construction
-         phase, is an open source (GPLv3) software project
-         free for anyone to use and is open to contributions from the
-         community.
-         </p>
+                <p>
+                    Current LSST DM job openings:
+                </p>
+                    <ul>
+                        <li><a href="https://www.princeton.edu/astro/resources/job/jo/index.xml#comp000055bddc2d0000003dd7408b">Princeton University: Postdoctoral Positions in Software</a> <span class="label label-info">Updated for 2017 start</span></li>
+                    </ul>
 
-         <p>We invite you to:</p>
-         <ul>
-          <li><a href="http://pipelines.lsst.io">Read the documentation at pipelines.lsst.io</a>
-          <li><a href="https://community.lsst.org/c/dm">Join the conversation with DM on the LSST Community forum</a></li>
-          <li><a href="http://github.com/lsst">View the code on GitHub</a>
-         </ul>
-      </div>
-    </div>
+                <p>
+                    <button type="button" class="btn btn-inline btn-xs btn-outline-success">Hint</button> To receive e-mails for new LSST DM job openings, subscribe to
+                    the <a href="https://lists.lsst.org/mailman/listinfo/dm-announce">dm-announce</a> mailing list.
+                    For more LSST positions, see the main <a href="http://lsst.org/hiring">LSST Hiring</a> page.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h4>Use, Modify, Contribute</h4>
+                <p>
+                The LSST data processing system, though still in an early construction
+                phase, is an open source (GPLv3) software project
+                free for anyone to use and is open to contributions from the
+                community.
+                </p>
+
+                <p>We invite you to:</p>
+                <ul>
+                    <li><a href="http://pipelines.lsst.io">Read the documentation at pipelines.lsst.io</a></li>
+                    <li><a href="https://community.lsst.org/c/dm">Join the conversation with DM on the LSST Community forum</a></li>
+                    <li><a href="http://github.com/lsst">View the code on GitHub</a></li>
+                </ul>
+            </div> <!-- col -->
+        </div> <!-- row -->
+    </div> <!-- container -->
 </section>
-
 
 <section class="container-fluid" id="lsst">
     <div class="container">
@@ -337,7 +350,11 @@ eups distrib install -t v12_0 lsst_apps</pre>
 
 <section class="container-fluid" id="people">
     <div class="container">
-    <h2>People, Sponsors, and Contact Information</h2>
+        <div class="row">
+            <div class="col-12">
+            <h2>People, Sponsors, and Contact Information</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12">
                 <h5>Andy Connolly&nbsp;&nbsp;<small class="text-info">Director</small></h5>
