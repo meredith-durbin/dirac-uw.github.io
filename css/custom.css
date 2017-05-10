@@ -88,6 +88,29 @@ h1,h2,h3,h4,h5,h6 {
         margin-top:1em;
     }
 }
+.table-small td, .table-small th {
+    padding-top:6px;
+    padding-bottom:6px;
+}
+tbody:last-child {
+    border-bottom:1px solid rgb(163, 163, 163);
+}
+@media (max-width:768px) {
+    .vanish {
+        display:none;
+    }
+    .appear {
+        display:inline-block;
+    }
+}
+@media (min-width:768px) {
+    .vanish {
+        display:inline-block;
+    }
+    .appear {
+        display:none;
+    }
+}
 /*section:before, .jumbotron:before {
     content:""!important;
     display:block!important;
